@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Colombia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #cdcef369;
+            font-family: Arial, sans-serif;
+            color:#0f0f0f;
+s
+        }
+    </style>  
+</head>
+
+
+<body>  
+
+<header>
+    
+  <img src="imagenes/logo.png" alt="Logo Colombia" class="logo-img">
+  <div>
+    <h1> VIAJES COLOMBIA</h1>
+    <P>Descubre nuevos destinos 🧳</P>
+  </div>
+
+</header>
+
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#planes">Planes</a>
+        <a href="#video">Video</a>
+        <a href="#reserva">Solicitudes</a>
+    </nav>
+
+<main>
+  <section id="destinos">
+    <h2>Destinos Turísticos</h2>
+    <div class="destinos">
+      <article>
+        <img src="img/bogota.jpg" alt="Bogotá">
+        <h3>Bogotá</h3>
+        <p>Plan cultural y gastronómico.</p>
+      </article>
+      <article>
+        <img src="img/santa-marta.jpg" alt="Santa Marta">
+        <h3>Santa Marta</h3>
+        <p>Plan de playa, naturaleza y aventura.</p>
+      </article>
+      <article>
+        <img src="img/cartagena.jpg" alt="Cartagena">
+        <h3>Cartagena</h3>
+        <p>Historia, playa y ciudad amurallada.</p>
+      </article>
+    </div>
+  </section>
+
+
+
+
+  <section id="planes">
+    <h2> Precios por Persona</h2>
+    <table><caption> Planes turisticos </caption>
+    <thead><tr><th>Destino</th></tr></thead>
+    <tbody>
+      <tr><td>Bogotá</td><td>$500.000</td></tr>
+      <tr><td>Santa Marta</td><td>$700.000</td></tr>
+      <tr><td>Cartagena</td><td>$800.000</td></tr>
+    </tbody>
+    </table>
+  </section>
+
+<section id="video">
+  <h2>Recurso Multimedia</h2>
+  <p>Ejemplo de marco (iframe). El aprendiz puede reemplazarlo por un vídeo turístico autorizado.</p>
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/K2wXr-VTVlg" 
+    title="Vídeo turístico ejemplo" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</section>
+
+
+<section id="reserva">
+  <h2>Solicitar Reserva</h2>
+  <form id="formViaje">
+    <label for="nombre">Nombre:</label><input type="text" id="nombre" 
+    <label for="destino">Destino</label><input type="text" id="destino"
+    <select id=""destino"><option value ="">Seleccione</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Cartagena">Cartagena</option></select>
+  </form>
+  <div id="resultado"> </div>
+
+</section>
+</main>
+<footer>
+  <p>&copy; 2024 Viajes Colombia. Todos los derechos reservados.</p
+</footer>
+
+<script src ="app.js"></script>
+
+
+</body>
+</html>

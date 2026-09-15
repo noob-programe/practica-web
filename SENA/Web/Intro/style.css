@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cabeceraPagina {
+    background-color: #54a509;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+#menuSuperior {
+    background-color: #aee4b396;
+    overflow: hidden;
+}
+#areadeInformación {
+    background-color: #f0a3a3;
+    padding: 20px;
+    text-align: center;
+}
+#BarraLateral {
+    background-color: #20f520;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #0d0d0e;
+    text-align: center;
+}
+
+#piePagina {
+    background-color: #7ff70f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}

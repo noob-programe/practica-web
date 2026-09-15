@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #070a12; /* Fondo ultra oscuro */
+    background-image: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #070a12 70%);
+    color: #f1f5f9;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjeta principal contenedor dividido */
+.card-container {
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px); /* Efecto cristal (Glassmorphism) */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 254, 0.1);
+    overflow: hidden;
+}
+
+/* Panel izquierdo: Imagen con filtro futurista */
+.image-panel {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.image-overlay {
+    background: linear-gradient(to top, rgba(7, 10, 18, 0.95), transparent);
+    padding: 30px;
+    width: 100%;
+}
+
+.image-overlay h2 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    color: #00f2fe;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+.image-overlay p {
+    margin: 0;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+/* Formulario */
+form {
+    flex: 1.2;
+    padding: 35px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+legend {
+    color: #00f2fe;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+/* Selección de opciones para el menú en modo oscuro */
+select option, select optgroup {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+/* Brillo neón al hacer foco en las casillas */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00f2fe;
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+    background: rgba(15, 23, 42, 1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botón Neón */
+button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: #070a12;
+    border: none;
+    padding: 12px;s
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Responsive: En pantallas pequeñas, la imagen se oculta para no apretar el formulario */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .image-panel {
+        display: none;
+    }
+}
