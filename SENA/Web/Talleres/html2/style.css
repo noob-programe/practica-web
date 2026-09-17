@@ -49,3 +49,100 @@
     color: #f00000;
     margin: 15px 0;
 }
+
+#izquierda {
+    color: rgb(10, 10, 10);
+    width: 15%;
+    background-color: #e0e0e0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#izquierda ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /*quitar viñetas de la lista*/
+
+}
+#izquierda li{
+    background-color: #f30000;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+    text-align: center; /*alinear teztxto al centro*/
+    font-size:20px; /* tamaño de letra */
+}
+
+
+
+ #derecha{
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    width: 15%;
+    background-color: #f30000;
+
+ }
+ #derecha ul{
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ #derecha li{
+    background-color: #e0e0e0; 
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+    font-size: 20px;
+ }
+
+#contenido{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+
+
+}
+
+#pie{
+    background: linear-gradient(to right, red, pink, white);
+    color: black;
+    justify-content:center;
+    gap: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#formulario{
+    display:flex;
+    flex-direction:column;
+    color:red
+
+}
+
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+
+}
+
+input{
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    padding: 5px;
+}
+
+#boton{
+    margin-top: 30px;
+    background-color: #f00000;
+    color: white;
+}
+
