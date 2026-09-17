@@ -1,0 +1,51 @@
+/* cabecera a{
+    background-color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+}
+#titulo-principal{
+    background-color: #ffffff;
+    color: #f00000;
+}
+#izquierda{
+    background-color: #e0e0e0;
+    
+}
+
+#formulario{
+    background-color: #e0e0e0;
+}
+
+#derecha{
+    background-color: #e00606;
+}
+
+#titulo-formulario{
+    background-color: #e0e0e0;
+    color: #f00000;
+} */
+
+/* 1. Centra los 3 enlaces horizontalmente */
+#cabecera nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;          /* Separa las cajitas entre sí */
+    padding-top: 15px;
+}
+
+/* 2. Convierte cada enlace en una cajita roja */
+#cabecera a {
+    background-color: #f00000; /* Fondo rojo */
+    color: #ffffff;            /* Texto blanco */
+    text-decoration: none;     /* Quita el subrayado */
+    padding: 6px 14px;         /* Crea la forma de la caja */
+    font-weight: bold;
+    border: 1px solid #a00000; /* Borde oscuro para dar relieve */
+}
+
+/* 3. Centra el título "Sistemas de Información" */
+#titulo-principal {
+    text-align: center;
+    color: #f00000;
+    margin: 15px 0;
+}
