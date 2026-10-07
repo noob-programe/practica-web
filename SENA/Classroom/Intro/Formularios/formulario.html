@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main>
+        <h1>Formulario de Producto 📝</h1>
+
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Información General</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre_producto" placeholder="Ej: Teclado Mecánico" required>
+
+                <label for="apellido">Apellido Responsable:</label>
+                <input type="text" id="apellido" name="apellido_responsable" placeholder="Ej: Pérez">
+
+                <label for="codigo">Código:</label>
+                <input type="number" id="codigo" name="codigo_producto" placeholder="1001" required>
+
+                <label for="vencimiento">Fecha de Vencimiento:</label>
+                <input type="date" id="vencimiento" name="fecha_vencimiento">
+            </fieldset>
+
+            <fieldset>
+                <legend>Origen del Producto</legend>
+                <div class="opciones-inline">
+                    <label><input type="radio" name="origen" value="nacional" checked> Nacional</label>
+                    <label><input type="radio" name="origen" value="importado"> Importado</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Garantía</legend>
+                <div class="opciones-inline">
+                    <label><input type="checkbox" name="garantia" value="si"> Con garantía</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles Logísticos</legend>
+
+                <label for="proveedor">Proveedor:</label>
+                <select id="proveedor" name="proveedor" required>
+                    <option value="" disabled selected>Selecciona un proveedor...</option>
+                    <option value="valentina">Valentina</option>
+                    <option value="veronica">Veronica</option>
+                    <option value="juan">Juan</option>
+                </select>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="3" placeholder="Detalles del producto..."></textarea>
+            </fieldset>
+
+            <button type="submit">Guardar Producto</button>
+
+        </form>
+    </main>
+
+</body>
+</html>

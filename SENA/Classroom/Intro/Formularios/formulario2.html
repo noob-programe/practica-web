@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Admisiones 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card-container">
+        
+        <!-- Panel lateral con la imagen futurista -->
+        <div class="image-panel">
+            <div class="image-overlay">
+                <h2>Portal Cyber-Admisiones</h2>
+                <p>Construye el futuro de la ingeniería y la administración.</p>
+            </div>
+        </div>
+
+        <!-- Panel del Formulario -->
+        <form action="#" method="POST">
+            <h1>Registro de Aspirante</h1>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre_aspirante" placeholder="Ej: Carlos Pérez" required>
+
+                <label for="apellido">Apellidos Completo:</label>
+                <input type="text" id="apellido" name="apellido_aspirante" placeholder="Ej: Salgado" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Académica</legend>
+
+                <label for="programa">Programa de Interés:</label>
+                <select id="programa" name="programa_academico" required>
+                    <option value="" disabled selected>Selecciona una opción...</option>
+                    <optgroup label="Ingeniería">
+                        <option value="sistemas">Ingeniería de Sistemas</option>
+                        <option value="software">Ingeniería de Software</option>
+                    </optgroup>
+                    <optgroup label="Administración">
+                        <option value="empresas">Administración de Empresas</option>
+                    </optgroup>
+                </select>
+
+                <label for="sede">Sede Preferida:</label>
+                <input type="text" id="sede" name="sede_preferida" list="lista-sedes" placeholder="Selecciona o escribe una ciudad...">
+                <datalist id="lista-sedes">
+                    <option value="Bogotá"></option>
+                    <option value="Medellín"></option>
+                    <option value="Cali"></option>
+                </datalist>
+
+                <label for="comentarios">Observaciones Adicionales:</label>
+                <textarea id="comentarios" name="observaciones_aspirante" rows="3" placeholder="Escribe aquí..."></textarea>
+            </fieldset>
+
+            <button type="submit">Iniciar Proceso</button>
+        </form>
+
+    </main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

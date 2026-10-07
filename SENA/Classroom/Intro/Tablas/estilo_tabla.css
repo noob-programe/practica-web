@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* 1. Estructura base de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina la doble línea fea entre bordes de celdas */
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Mantiene las esquinas redondeadas en la cabecera */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Título descriptivo */
+caption {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* 3. Cabecera (thead) */
+thead {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+th {
+    padding: 14px 16px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+/* 4. Cuerpo de datos (tbody) */
+td {
+    padding: 12px 16px;
+    color: #334155;
+    font-size: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Filas alternadas (Efecto Cebra) y foco táctil */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* 5. Pie de tabla (tfoot) */
+tfoot {
+    background-color: #e2e8f0;
+    font-weight: bold;
+}
+
+tfoot td {
+    border-bottom: none;
+    color: #0f172a;
+}
+
+/* 6. Alineaciones personalizadas mediante las clases de <col> */
+.col-codigo { text-align: center; width: 15%; }
+.col-producto { text-align: left; width: 55%; }
+.col-precio { text-align: right; width: 30%; }
