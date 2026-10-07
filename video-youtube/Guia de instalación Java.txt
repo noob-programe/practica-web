@@ -1,0 +1,32 @@
+==================================================
+ GUÍA: CONFIGURACIÓN JAVA Y VS CODE (SIN ADMIN)
+==================================================
+
+1. DESCARGAR Y EXTRAER
+- Descargar JDK portátil (.zip) de OpenJDK o Adoptium.
+- Extraer en carpeta de usuario (ej: C:\Users\TuUsuario\Documents\jdk-21).
+
+2. VARIABLES DE ENTORNO DE USUARIO
+- Ejecutar (Win + R): 
+  rundll32.exe sysdm.cpl,EditEnvironmentVariables
+- En "Variables de usuario":
+  * Nueva variable:
+    - Nombre: JAVA_HOME
+    - Valor:  C:\Users\TuUsuario\Documents\jdk-21
+  * Editar variable 'Path':
+    - Agregar: %JAVA_HOME%\bin
+
+3. CONFIGURAR VS CODE
+- Instalar extensión: "Extension Pack for Java" (Microsoft).
+- Salir de Restricted Mode (clic en "Trust / Confiar carpeta").
+- Reiniciar VS Code.
+
+4. AJUSTE MANUAL EN VS CODE (Solo si persiste el error)
+- Ir a Ajustes (Ctrl + ,) -> buscar: java.jdt.ls.java.home
+- Pegar la ruta usando barras inclinadas (/):
+  C:/Users/TuUsuario/Documents/jdk-21
+
+5. VERIFICACIÓN
+- Terminal de comandos: java -version
+- Crear Main.java en VS Code y ejecutar.
+==================================================
